@@ -14,6 +14,20 @@ endif()
 add_subdirectory(src/testLib)
 add_subdirectory(src/testApp)
 
+include(FetchContent)
+
+FetchContent_Declare(
+  Catch2
+  GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+  GIT_TAG        v2.13.7
+)
+FetchContent_MakeAvailable(Catch2)
+
+list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/contrib)
+include(Catch)
+include(CTest)
+add_subdirectory(tests/testLibTests)
+
 set(docs README.md)
 
 if(BUILD_DOCS)
