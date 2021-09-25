@@ -13,6 +13,8 @@ __global__ void addOne(double *a) { *a += 1; }
 
 } // namespace
 
+namespace kernels {
+
 double launch_simple_kernel() {
     double *d = nullptr;
     cudaMallocManaged((void **)&d, sizeof(double));
@@ -22,4 +24,6 @@ double launch_simple_kernel() {
     double out = *d;
     cudaFree(d);
     return out;
+}
+
 }

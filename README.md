@@ -1,4 +1,4 @@
-# cudaOversubscribe
+# starterCUDA
 
 Github Actions: [![CMake](https://github.com/nitro44x/starterCUDA/actions/workflows/cmake.yml/badge.svg)](https://github.com/nitro44x/starterCUDA/actions/workflows/cmake.yml)
 
@@ -22,3 +22,24 @@ Run the following commands:
     make
     ./src/testApp/testApp
 
+## Build Docs
+
+If you have doxygen installed, you can build the docs by enabling the BUILD_DOCS option during generation.
+
+    cmake -DBUILD_DOCS:BOOL=ON ..
+    make
+    
+At this point, you should be able to open the file <sourceRoot>/build/html/index.html in a web browser to see
+the generated documentation.
+
+## ccache
+
+This template also searches for ccache to speedup reoccuring computations. 
+For more info see [ccache](https://ccache.dev/). This is completely optional and should work
+behind the scenes.
+
+# Thirdparty
+
+In order to give the generated documentation a little makeover, this template uses the 
+[doxygen-awesome-css theme](https://github.com/jothepro/doxygen-awesome-css). I've opted to just grabbing a copy
+of the theme since I'm trying to reduce the number of submodules. 

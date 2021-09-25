@@ -10,10 +10,10 @@
 #include <testLib/testLib.hpp>
 
 int main(int argc, char **argv) {
-    auto d = launch_simple_kernel();
-    std::cout << "d = " << d << std::endl;
+    auto const value = launch_simple_kernel();
+    std::cout << "Kernel in exe, one = " << value << std::endl;
 
-    auto dd = testLib::call_simpleLib();
-    std::cout << "dd = " << dd << std::endl;
+    auto const valueLib = testLib::call_simpleLib();
+    std::cout << "Kernel in lib, two = " << valueLib << std::endl;
     return 0;
 }

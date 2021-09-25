@@ -5,6 +5,11 @@
 
 namespace testLib {
 
+/**
+ * @brief Simple library call
+ * 
+ * @return 2 
+ */
 double call_simpleLib();
 
 }
