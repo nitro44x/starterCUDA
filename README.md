@@ -21,6 +21,7 @@ Run the following commands:
     cmake ..
     make
     ./src/testApp/testApp
+    ctest
 
 ## Build Docs
 
