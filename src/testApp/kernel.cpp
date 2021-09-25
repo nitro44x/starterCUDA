@@ -26,4 +26,4 @@ double launch_simple_kernel() {
     return out;
 }
 
-}
+} // namespace kernels
