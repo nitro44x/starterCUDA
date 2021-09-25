@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cudaoversubscribe_9',['cudaOversubscribe',['../index.html',1,'']]]
+  ['startercuda_11',['starterCUDA',['../index.html',1,'']]]
 ];

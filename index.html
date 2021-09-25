@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>starterCUDA: cudaOversubscribe</title>
+<title>starterCUDA: starterCUDA</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">cudaOversubscribe </div>  </div>
+<div class="title">starterCUDA </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Github Actions: <a href="https://github.com/nitro44x/starterCUDA/actions/workflows/cmake.yml"><object type="image/svg+xml" data="https://github.com/nitro44x/starterCUDA/actions/workflows/cmake.yml/badge.svg" style="pointer-events: none;">CMake</object></a></p>
@@ -112,7 +112,18 @@ cd build
 cmake ..
 make
 ./src/testApp/testApp
-</pre> </div></div><!-- PageDoc -->
+</pre><h2><a class="anchor" id="autotoc_md2"></a>
+Build Docs</h2>
+<p>If you have doxygen installed, you can build the docs by enabling the BUILD_DOCS option during generation. </p><pre class="fragment">cmake -DBUILD_DOCS:BOOL=ON ..
+make
+</pre><p>At this point, you should be able to open the file &lt;sourceRoot&gt;/build/html/index.html in a web browser to see the generated documentation.</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+ccache</h2>
+<p>This template also searches for ccache to speedup reoccuring computations. For more info see <a href="https://ccache.dev/">ccache</a>. This is completely optional and should work behind the scenes.</p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Thirdparty</h1>
+<p>In order to give the generated documentation a little makeover, this template uses the <a href="https://github.com/jothepro/doxygen-awesome-css">doxygen-awesome-css theme</a>. I've opted to just grabbing a copy of the theme since I'm trying to reduce the number of submodules. </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

@@ -23,9 +23,11 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "starterCUDA", "index.html", [
-    [ "cudaOversubscribe", "index.html", [
-      [ "Building and running the demo", "index.html#autotoc_md1", null ]
+    [ "Building and running the demo", "index.html#autotoc_md1", [
+      [ "Build Docs", "index.html#autotoc_md2", null ],
+      [ "ccache", "index.html#autotoc_md3", null ]
     ] ],
+    [ "Thirdparty", "index.html#autotoc_md4", null ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ]
     ] ]

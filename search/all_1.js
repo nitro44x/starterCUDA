@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['kernel_2ecpp_1',['kernel.cpp',['../kernel_8cpp.html',1,'']]],
-  ['kernel_2ehpp_2',['kernel.hpp',['../kernel_8hpp.html',1,'']]]
+  ['launch_5fsimple_5fkernel_2',['launch_simple_kernel',['../kernel_8cpp.html#a1b1b33d8da7a45fba81c9a7825516bf4',1,'kernels']]]
 ];
